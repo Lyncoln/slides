@@ -1,0 +1,89 @@
+---
+title: Seminário Internacional de Estatística com R \n Personagens em ação 
+author: <small> Lyncoln Sousa de Oliveira </small>
+date : <small>17/10/2018</small> 
+output: 
+  revealjs::revealjs_presentation:
+        theme: sky
+        transition: fade
+        slide_level: 2
+        center: True 
+---
+
+```{r eval=FALSE, include=FALSE}
+setwd("C://Users//Lyncoln//Desktop//teste//Slides")
+```
+
+
+# SOBRE O SER 
+## 
+>- Seminário internacional de estatística focado na linguágem de computação R.
+>- Pionerismo na América latina.
+>- Realizado anualmente, tendo sua primeira edição em 2016.
+>- Ocorre nos campus da UFF niterói. 
+
+
+# Programação
+##
+>- Minicursos e oficinas.
+>- Debates, palestras, sessão poster e sessão oral.
+>- Premiações.
+>- Espaço empresa e espaço blog. 
+>- Experimentação do R para iniciantes. 
+
+# Metodologia 
+##
+>- Duração de 3 dias.
+<p><spam class="fragment">
+1º Minicursos.  
+2º Palestras e conferências.  
+3º Apresentação de artigos na sessão oral e trabalhos na sessão pôster. </p></spam>
+
+# Participantes
+##
+- 517 pessoas.
+- 357 gratuidades para iniciantes no minicurso básico.
+- 27 palestrantes de diferentes regiões e países.
+- 7 autoridades (coordenadores, pró-reitores e diretores de unidades.
+
+# Trabalhos
+##
+>- 50 trabalhos selecionados pela comissão científica nas sessões orais e pôster.
+>- Foram envolvidos em torno de 144 autores e 31 instituições (nacionais e internacionais).
+>- Foram premiados 3 trabalhos da sessão oral e 3 trabalhos da sessão pôster.
+<center><p><spam class="fragment">
+<img src="medalha.png" width="500" height="300" />
+</p></spam></center>
+
+# Questionário
+##
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(tidyverse)
+library(likert)
+library(readxl)
+setwd("C://Users//Lyncoln//Desktop//teste//Script e BD")
+BD = read_excel("BD.xlsx")
+BD2= BD %>% 
+  select(6:15)
+BD2 = mutate_at(BD2,vars(1:3),function(x)factor(x,levels =1:5,labels=c("Muito Ruim","Ruim","Regular","Bom","Ótimo")))
+BD2 = mutate_at(BD2,vars(4:10),function(x)ordered(x,levels=c("Muito Ruim","Ruim","Regular","Bom","Ótimo"),labels=c("Muito Ruim","Ruim","Regular","Bom","Ótimo")))
+
+vet = NULL
+for( i in 1:10 ){
+  vet[i] = str_sub(names(BD2[,i]),start = 4)
+}
+names(BD2) = vet
+BD2 = as.data.frame(BD2)
+plot(likert(BD2)) + ggtitle("Nota Geral do Evento")
+
+```
+<br>
+<small>78 respostas</small>
+
+
+
+
+
+
+
+
