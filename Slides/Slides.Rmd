@@ -11,13 +11,13 @@ output:
 ---
 
 ```{r eval=FALSE, include=FALSE}
-setwd("C://Users//Lyncoln//Desktop//teste//Slides")
+setwd("F://Slides//slides")
 ```
 
 
 # SOBRE O SER 
 ## 
->- Seminário internacional de estatística focado na linguágem de computação R.
+>- Seminário internacional de estatística focado na linguagem de computação R.
 >- Pionerismo na América latina.
 >- Realizado anualmente, tendo sua primeira edição em 2016.
 >- Ocorre nos campus da UFF niterói. 
@@ -26,7 +26,7 @@ setwd("C://Users//Lyncoln//Desktop//teste//Slides")
 # Programação
 ##
 >- Minicursos e oficinas.
->- Debates, palestras, sessão poster e sessão oral.
+>- Debates, palestras, sessão pôster e sessão oral.
 >- Premiações.
 >- Espaço empresa e espaço blog. 
 >- Experimentação do R para iniciantes. 
@@ -39,12 +39,23 @@ setwd("C://Users//Lyncoln//Desktop//teste//Slides")
 2º Palestras e conferências.  
 3º Apresentação de artigos na sessão oral e trabalhos na sessão pôster. </p></spam>
 
+# SER 2018
+##
+>- Temática : "O R e o desafio na integração das ciências"
+<p><spam class="fragment">Exemplos : </p></spam>
+>- Área de linguística: Mineração de textos com a Julia Silge
+>- Área do direito: Jurimetria com Julio Trecenti
+
+
+
 # Participantes
 ##
-- 517 pessoas.
+-  +900 pessoas.
 - 357 gratuidades para iniciantes no minicurso básico.
 - 27 palestrantes de diferentes regiões e países.
 - 7 autoridades (coordenadores, pró-reitores e diretores de unidades.
+
+# Destaques 
 
 # Trabalhos
 ##
@@ -80,6 +91,9 @@ plot(likert(BD2)) + ggtitle("Nota Geral do Evento")
 <br>
 <small>78 respostas</small>
 
+# Apoiadores 
+## 
+![](apoio.png)
 
 
 
