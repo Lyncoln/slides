@@ -55,8 +55,6 @@ setwd("F://Slides//slides")
 - 27 palestrantes de diferentes regiões e países.
 - 7 autoridades (coordenadores, pró-reitores e diretores de unidades.
 
-# Destaques 
-
 # Trabalhos
 ##
 >- 50 trabalhos selecionados pela comissão científica nas sessões orais e pôster.
