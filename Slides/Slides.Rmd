@@ -1,7 +1,7 @@
 ---
 title: Seminário Internacional de Estatística com R \n Personagens em ação 
 author: <small> Lyncoln Sousa de Oliveira </small>
-date : <small>17/10/2018</small> 
+date : <small>16/10/2018</small> 
 output: 
   revealjs::revealjs_presentation:
         theme: sky
@@ -93,12 +93,12 @@ plot(likert(BD2)) + ggtitle("Nota Geral do Evento")
 #Endereços eletrônicos
 ##
 
-![](site.png)
+<img src="site.png" width="500" height="500" />
 
 # SER 2019
 ##
 
-![](chamda.png)
+<img src="chamda.png" width="500" height="500" />
 
 ##
 
